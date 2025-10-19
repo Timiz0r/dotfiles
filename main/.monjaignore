@@ -1,0 +1,18 @@
+# ignore files are used to keep stuff from getting to the repo from local, and to prevent local from being cleaned
+dev/
+obsidian/
+
+.*
+!.config/
+# it's recommended to put this in sets, since certain machines may have a different set
+!**/.monjaignore
+
+.config/gh/
+
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Public/
+Videos/
