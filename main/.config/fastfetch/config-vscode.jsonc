@@ -1,0 +1,91 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+      "type": "none"
+  },
+  "display": {
+    "temp": {
+        "unit": "C"
+    }
+  },
+  "modules": [
+      "title",
+      "separator",
+
+      "btrfs",
+      "disk",
+      "break",
+
+      "host",
+      "kernel",
+      "uptime",
+      "packages",
+      //"bios",
+      //"bootmgr",
+      //"chassis",
+      //"initsystem",
+      //"loadavg",
+      //"processes",
+      //"shell",
+      //"editor",
+      //"monitor",
+      //"lm",
+      //"de",
+      //"wm",
+      //"wmtheme",
+      //"theme",
+      //"icons",
+      //"font",
+      //"cursor",
+      //"wallpaper",
+      //"terminal",
+      //"terminalfont",
+      //"terminalsize",
+      //"terminaltheme",
+      //"cpucache",
+      //"cpuusage",
+      //"swap",
+      //"zpool",
+      // {
+      //     "type": "battery",
+      //     "temp": true
+      // },
+      //"poweradapter",
+      //"player",
+      //"media",
+      // {
+      //     "type": "publicip",
+      //     "timeout": 1000
+      // },
+      // {
+      //     "type": "localip",
+      //     "showIpv6": true,
+      //     "showMac": true,
+      //     "showSpeed": true,
+      //     "showMtu": true,
+      //     "showLoop": true,
+      //     "showFlags": true,
+      //     "showAllIps": true
+      // },
+      // "dns",
+      // "wifi",
+      //"datetime",
+      //"locale",
+      // "opengl",
+      // "opencl",
+      // "users",
+      // "bluetooth",
+      // "bluetoothradio",
+      // "sound",
+      // "camera",
+      // "gamepad",
+      // "netio",
+      // "diskio",
+      // {
+      //     "type": "physicaldisk",
+      //     "temp": true
+      // },
+      // "tpm",
+      // "version",
+  ]
+}

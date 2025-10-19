@@ -1,18 +1,31 @@
-# ignore files are used to keep stuff from getting to the repo from local, and to prevent local from being cleaned
-dev/
-obsidian/
+/*
+!/*/
+!/*.sh
 
-.*
-!.config/
+# ignore files are used to keep stuff from getting to the repo from local, and to prevent local from being cleaned
+/dev/
+/obsidian/
+/OneDrive/
+/Dropbox/
+/Unity/
+/go/
+/isos/
+/vhds/
+/FiraxisLive/
+/steamvr/
+/snap/
+/icons/
+/dumpanalysis/
+
+/.*
+!/.config/
 # it's recommended to put this in sets, since certain machines may have a different set
 !**/.monjaignore
 
-.config/gh/
-
-Desktop/
-Documents/
-Downloads/
-Music/
-Pictures/
-Public/
-Videos/
+/Desktop/
+/Documents/
+/Downloads/
+/Music/
+/Pictures/
+/Public/
+/Videos/

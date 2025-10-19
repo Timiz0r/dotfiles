@@ -1,0 +1,124 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+      "padding": {
+          "top": 2,
+          "left": 1
+      },
+      "type": "kitty",
+      "source": "~/.config/fastfetch/nekochan.png",
+      "height": 20
+  },
+  "display": {
+    "temp": {
+        "unit": "C"
+    }
+  },
+  "modules": [
+      "title",
+      "separator",
+
+      "board",
+      {
+          "type": "cpu",
+          "showPeCoreCount": true,
+          "temp": true
+      },
+      {
+          "type": "gpu",
+          "driverSpecific": true,
+          "temp": true
+      },
+      "memory",
+      "physicalmemory",
+      "btrfs",
+      "disk",
+      "break",
+
+      "os",
+      "host",
+      "kernel",
+      "uptime",
+      "packages",
+      "break", 
+
+      "display",
+      //"brightness", //runs slow
+      "vulkan",
+      "break",
+      
+      {
+        "type": "weather",
+        "timeout": 1000,
+        "outputFormat": "%t+-+%C+(%l)"
+      },
+      "colors",
+      //"bios",
+      //"bootmgr",
+      //"chassis",
+      //"initsystem",
+      //"loadavg",
+      //"processes",
+      //"shell",
+      //"editor",
+      //"monitor",
+      //"lm",
+      //"de",
+      //"wm",
+      //"wmtheme",
+      //"theme",
+      //"icons",
+      //"font",
+      //"cursor",
+      //"wallpaper",
+      //"terminal",
+      //"terminalfont",
+      //"terminalsize",
+      //"terminaltheme",
+      //"cpucache",
+      //"cpuusage",
+      //"swap",
+      //"zpool",
+      // {
+      //     "type": "battery",
+      //     "temp": true
+      // },
+      //"poweradapter",
+      //"player",
+      //"media",
+      // {
+      //     "type": "publicip",
+      //     "timeout": 1000
+      // },
+      // {
+      //     "type": "localip",
+      //     "showIpv6": true,
+      //     "showMac": true,
+      //     "showSpeed": true,
+      //     "showMtu": true,
+      //     "showLoop": true,
+      //     "showFlags": true,
+      //     "showAllIps": true
+      // },
+      // "dns",
+      // "wifi",
+      //"datetime",
+      //"locale",
+      // "opengl",
+      // "opencl",
+      // "users",
+      // "bluetooth",
+      // "bluetoothradio",
+      // "sound",
+      // "camera",
+      // "gamepad",
+      // "netio",
+      // "diskio",
+      // {
+      //     "type": "physicaldisk",
+      //     "temp": true
+      // },
+      // "tpm",
+      // "version",
+  ]
+}
