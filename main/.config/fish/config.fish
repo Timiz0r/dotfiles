@@ -3,18 +3,19 @@ if not status is-interactive
 end
 
 function fish_greeting
-    set -l activity (kde_activity)
-
-    if test $TERM_PROGRAM = "vscode"
-        fastfetch -c ~/.config/fastfetch/config-vscode.jsonc
-        return
-    end
-
-    if test $activity = "Work"
-        fastfetch -c ~/.config/fastfetch/config-private.jsonc
-    else
-        fastfetch
-    end
+    #  set -l activity (kde_activity)
+    #
+    #  if test $TERM_PROGRAM = "vscode"
+    #      fastfetch -c ~/.config/fastfetch/config-vscode.jsonc
+    #      return
+    #  end
+    #
+    #  if test $activity = "Work"
+    #      fastfetch -c ~/.config/fastfetch/config-private.jsonc
+    #  else
+    #      fastfetch
+    #  end
+    fastfetch
 end
 
 set -x EDITOR nvim
@@ -32,7 +33,7 @@ rustup completions fish | source
 zellij setup --generate-completion fish | source
 monja completions | source
 complete -c cht.sh -xa '(curl -s cheat.sh/:list)'
-pnpm completion fish > ~/.config/fish/completions/pnpm.fish
+pnpm completion fish >~/.config/fish/completions/pnpm.fish
 
 fzf_configure_bindings --variables='ctrl-alt-v'
 set -x fzf_preview_dir_cmd eza -la --color=always --group-directories-first --icons
