@@ -8,6 +8,7 @@ audacity/
 
 
 .vscode/
+AffinityOnLinux/
 Code/
 CodeRush/
 Discord Key Storage/
@@ -31,6 +32,7 @@ cachyos/
 dconf/
 discord/
 dlv/
+dgop/
 environment.d/
 envision/
 fcitx*/
@@ -59,8 +61,12 @@ onedrive/
 onlyoffice/
 openvr/
 openxr/
+OrcaSlicer/
 plasma-workspace/
 pulse/
+QtProject/
+qt5ct/
+qt6ct/
 session/
 simple-update-notifier/
 spotify/

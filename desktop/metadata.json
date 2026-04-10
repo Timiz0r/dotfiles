@@ -1,0 +1,18 @@
+{
+    "KPlugin": {
+        "Name": "Clear top monitor",
+        "Description": "Moves windows from top monitor to bottom monitor.",
+        "Icon": "preferences-system-windows",
+        
+        "Authors": [
+            
+        ],
+        "Id": "clear-top-monitor",
+        "Version": "1.0",
+        "License": "MIT",
+        "Website": ""
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}
