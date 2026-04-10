@@ -55,6 +55,7 @@ menus/
 microsoft-edge/
 monado/
 mozc/
+nvim/lazy-lock.json
 obs-studio/
 octopi/
 onedrive/
