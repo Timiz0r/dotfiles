@@ -5,7 +5,9 @@ end
 set -x EDITOR nvim
 set -x PAGER 'bat --wrap never'
 set -x GIT_AUTHOR_NAME Timiz0r
+set -x GIT_COMMITTER_NAME Timiz0r
 set -x GIT_AUTHOR_EMAIL 5377118+Timiz0r@users.noreply.github.com
+set -x GIT_COMMITTER_EMAIL 5377118+Timiz0r@users.noreply.github.com
 set -x GCM_CREDENTIAL_STORE gpg
 set -x GTK_USE_PORTAL 1
 set -x FZF_DEFAULT_COMMAND rg --files
@@ -22,6 +24,12 @@ pnpm completion fish > ~/.config/fish/completions/pnpm.fish
 
 fzf_configure_bindings --variables='ctrl-alt-v'
 set -x fzf_preview_dir_cmd eza -la --color=always --group-directories-first --icons
+
+if test (kreadconfig6 --file kwinrc --group Plugins --key clear-top-monitorEnabled) != true
+    kwriteconfig6 --file kwinrc --group Plugins --key clear-top-monitorEnabled true
+    kwriteconfig6 --file kglobalshortcutsrc --group kwin --key clearTopMonitor "Ctrl+Alt+9,none,Clear top monitor"
+    qdbus6 org.kde.KWin /KWin reconfigure
+end
 
 # stuff to maybe convert later
 # alias ppls='kill -9 plasmashell'
