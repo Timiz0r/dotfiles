@@ -12,6 +12,7 @@ set -x FZF_DEFAULT_COMMAND rg --files
 set -x FZF_DEFAULT_OPTS -m --bind 'ctrl-a:select-all' --bind 'alt-a:deselect-all'
 # note that default node version via nvm is set via uvars
 
+starship init fish | source
 zoxide init fish | source
 rustup completions fish | source
 zellij setup --generate-completion fish | source

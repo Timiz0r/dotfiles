@@ -19,7 +19,7 @@
 
 /.*
 !/.config/
-!/.local/
+#!/.local/
 # it's recommended to put this in sets, since certain machines may have a different set
 !**/.monjaignore
 
