@@ -1,7 +1,11 @@
 {
-  "theme": "dark",
   "statusLine": {
     "type": "command",
     "command": "starship statusline claude-code"
+  },
+  "effortLevel": "high",
+  "theme": "dark",
+  "enabledPlugins": {
+    "rust-analyzer-lsp@claude-plugins-official": true
   }
 }

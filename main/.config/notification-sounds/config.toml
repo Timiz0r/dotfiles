@@ -1,0 +1,6 @@
+# Urgency levels: 0 = low, 1 = normal, 2 = critical
+# Changes take effect immediately — no restart needed.
+
+0 = "/usr/share/sounds/ocean/stereo/dialog-information.oga"
+1 = "/usr/share/sounds/ocean/stereo/dialog-information.oga"
+2 = "/usr/share/sounds/ocean/stereo/dialog-error.oga"

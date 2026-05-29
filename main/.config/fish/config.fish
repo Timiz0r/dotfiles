@@ -12,7 +12,8 @@ set -x GCM_CREDENTIAL_STORE gpg
 set -x GTK_USE_PORTAL 1
 set -x FZF_DEFAULT_COMMAND rg --files
 set -x FZF_DEFAULT_OPTS -m --bind 'ctrl-a:select-all' --bind 'alt-a:deselect-all'
-# note that default node version via nvm is set via uvars
+set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+set -x HERMES_HOME ~/dev/hermes/home
 
 starship init fish | source
 zoxide init fish | source
@@ -21,6 +22,7 @@ zellij setup --generate-completion fish | source
 monja completions | source
 complete -c cht.sh -xa '(curl -s cheat.sh/:list)'
 pnpm completion fish > ~/.config/fish/completions/pnpm.fish
+mise activate fish | source
 
 fzf_configure_bindings --variables='ctrl-alt-v'
 set -x fzf_preview_dir_cmd eza -la --color=always --group-directories-first --icons

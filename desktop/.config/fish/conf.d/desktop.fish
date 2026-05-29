@@ -1,3 +1,6 @@
+set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+set -x HERMES_TUI 1
+
 function fish_greeting
     set -l activity (kde_activity)
 
