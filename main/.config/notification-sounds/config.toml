@@ -1,6 +1,32 @@
-# Urgency levels: 0 = low, 1 = normal, 2 = critical
+# Urgency sounds: 0=low, 1=normal, 2=critical
 # Changes take effect immediately — no restart needed.
-
 0 = "/usr/share/sounds/ocean/stereo/dialog-information.oga"
 1 = "/usr/share/sounds/ocean/stereo/dialog-information.oga"
 2 = "/usr/share/sounds/ocean/stereo/dialog-error.oga"
+
+[rule.discord]
+sound = ""
+
+[rule.discord.match]
+app = "discord"
+
+# Rules are evaluated top-to-bottom; last match wins.
+# Set sound = "" to silence matching notifications.
+#
+# Match keys: app, summary, body, desktop_entry (exact by default)
+#   Append _contains for substring:  summary_contains = "mention"
+#   Append _regex for regex:         body_regex = "@tim|@here"
+#
+# Example:
+# [rule.discord]
+# sound = "/usr/share/sounds/ocean/stereo/dialog-information.oga"
+#
+# [rule.discord.match]
+# app = "discord"
+#
+# [rule.discord_mention]
+# sound = "/usr/share/sounds/ocean/stereo/dialog-error.oga"
+#
+# [rule.discord_mention.match]
+# app = "discord"
+# body_regex = "@tim|@here|@everyone"

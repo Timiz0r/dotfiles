@@ -1,2 +1,1 @@
-# Use a shortcut to reduce the amount of initial folder nesting!
-# shortcut = '.config'
+packages = ["btop", "discord", "fastfetch", "ghostty", "git", "git-lfs", "github-cli", "keepassxc", "mise", "neovim", "noto-fonts", "noto-fonts-cjk", "noto-fonts-emoji", "ripgrep", "rustup", "starship", "vlc", "yazi", "zellij", "zoxide"]

@@ -1,11 +1,13 @@
 {
+  "model": "sonnet",
   "statusLine": {
     "type": "command",
     "command": "starship statusline claude-code"
   },
-  "effortLevel": "high",
-  "theme": "dark",
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": true
-  }
+  },
+  "effortLevel": "high",
+  "tui": "default",
+  "theme": "dark"
 }
