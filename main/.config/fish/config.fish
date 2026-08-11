@@ -20,18 +20,11 @@ zoxide init fish | source
 rustup completions fish | source
 zellij setup --generate-completion fish | source
 monja completions | source
-complete -c cht.sh -xa '(curl -s cheat.sh/:list)'
-pnpm completion fish > ~/.config/fish/completions/pnpm.fish
+# pnpm completion fish > ~/.config/fish/completions/pnpm.fish
 mise activate fish | source
 
 fzf_configure_bindings --variables='ctrl-alt-v'
 set -x fzf_preview_dir_cmd eza -la --color=always --group-directories-first --icons
-
-if test (kreadconfig6 --file kwinrc --group Plugins --key clear-top-monitorEnabled) != true
-    kwriteconfig6 --file kwinrc --group Plugins --key clear-top-monitorEnabled true
-    kwriteconfig6 --file kglobalshortcutsrc --group kwin --key clearTopMonitor "Ctrl+Alt+9,none,Clear top monitor"
-    qdbus6 org.kde.KWin /KWin reconfigure
-end
 
 # stuff to maybe convert later
 # alias ppls='kill -9 plasmashell'
