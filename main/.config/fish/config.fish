@@ -46,3 +46,6 @@ set -x fzf_preview_dir_cmd eza -la --color=always --group-directories-first --ic
 #     echo
 # end
 # bind f5 _start_execute repaint
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
