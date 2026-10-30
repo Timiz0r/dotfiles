@@ -33,6 +33,7 @@ dconf/
 discord/
 dlv/
 dgop/
+environment.d/
 envision/
 fcitx*/
 fontconfig/
@@ -71,11 +72,14 @@ plasma-workspace/
 pulse/
 QDirStat/
 QtProject/
+qt5ct/
+qt6ct/
 session/
 simple-update-notifier/
 spotify/
 sublime-*/
 !sublime*/**/*.sublime-settings
+systemd/
 unity3d/
 unityhub/
 wireshark/

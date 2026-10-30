@@ -20,7 +20,15 @@
 /.*
 !/.config/
 !/.claude/
-#!/.local/
+# gitignore semantics: a negation cannot re-include a file whose parent
+# directory is excluded, so /.* has to be walked back one level at a time.
+!/.local/
+/.local/*
+!/.local/share/
+/.local/share/*
+!/.local/share/icons/
+/.local/share/icons/*
+!/.local/share/icons/breeze-dark-yaru/
 # it's recommended to put this in sets, since certain machines may have a different set
 !**/.monjaignore
 

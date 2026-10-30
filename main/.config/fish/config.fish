@@ -8,7 +8,7 @@ set -x GIT_AUTHOR_NAME Timiz0r
 set -x GIT_COMMITTER_NAME Timiz0r
 set -x GIT_AUTHOR_EMAIL 5377118+Timiz0r@users.noreply.github.com
 set -x GIT_COMMITTER_EMAIL 5377118+Timiz0r@users.noreply.github.com
-set -x GCM_CREDENTIAL_STORE gpg
+set -x GCM_CREDENTIAL_STORE secretservice
 set -x GTK_USE_PORTAL 1
 set -x FZF_DEFAULT_COMMAND rg --files
 set -x FZF_DEFAULT_OPTS -m --bind 'ctrl-a:select-all' --bind 'alt-a:deselect-all'
