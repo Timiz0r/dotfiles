@@ -15,6 +15,8 @@ set -x FZF_DEFAULT_OPTS -m --bind 'ctrl-a:select-all' --bind 'alt-a:deselect-all
 set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
 set -x HERMES_HOME ~/dev/hermes/home
 
+git config --global alias.ff 'pull --ff-only'
+
 starship init fish | source
 zoxide init fish | source
 rustup completions fish | source
